@@ -420,26 +420,25 @@
     const LADDERS = { 3:14, 7:18 };
     const SNAKES  = { 19:6, 23:9 };
 
-    // SDG Questions
     const SDG_QUESTIONS = [
-      { sdg:"SDG 1",  topic:"No Poverty",              q:"What does SDG 1 want to END for everyone?",                opts:["All poverty","All wars","All illness"],                   a:"All poverty",        emoji:"🏘️" },
-      { sdg:"SDG 2",  topic:"Zero Hunger",              q:"SDG 2 wants everyone to have enough ___?",                 opts:["Food","Toys","Money"],                                    a:"Food",               emoji:"🌾" },
-      { sdg:"SDG 3",  topic:"Good Health",              q:"SDG 3 is about keeping people healthy. What helps most?",  opts:["Doctors & medicine","More cars","Bigger buildings"],      a:"Doctors & medicine", emoji:"💊" },
-      { sdg:"SDG 4",  topic:"Quality Education",        q:"SDG 4 says every child deserves ___?",                    opts:["Good education","Free candy","A pet"],                    a:"Good education",     emoji:"📚" },
-      { sdg:"SDG 5",  topic:"Gender Equality",          q:"SDG 5 says girls and boys should be treated ___?",        opts:["Equally","Differently","By size"],                        a:"Equally",            emoji:"⚖️" },
-      { sdg:"SDG 6",  topic:"Clean Water",              q:"SDG 6 wants clean ___ for all people?",                   opts:["Water","Air","Food"],                                     a:"Water",              emoji:"💧" },
-      { sdg:"SDG 7",  topic:"Clean Energy",             q:"Solar and wind power are types of what?",                 opts:["Clean energy","Dirty energy","Magic"],                    a:"Clean energy",       emoji:"⚡" },
-      { sdg:"SDG 8",  topic:"Decent Work",              q:"SDG 8 wants everyone to have a good ___?",                opts:["Job","House","Pet"],                                      a:"Job",                emoji:"💼" },
-      { sdg:"SDG 9",  topic:"Innovation",               q:"Building roads and bridges helps which SDG?",             opts:["SDG 9","SDG 3","SDG 5"],                                  a:"SDG 9",              emoji:"🏗️" },
-      { sdg:"SDG 10", topic:"Reduced Inequalities",     q:"SDG 10 wants to reduce gaps between ___ and poor?",       opts:["Rich","Fast","Tall"],                                     a:"Rich",               emoji:"🤝" },
-      { sdg:"SDG 11", topic:"Sustainable Cities",       q:"SDG 11 wants cities to be safe and ___?",                 opts:["Sustainable","Dark","Empty"],                             a:"Sustainable",        emoji:"🏙️" },
-      { sdg:"SDG 12", topic:"Responsible Consumption",  q:"SDG 12 says we should recycle and reduce ___?",           opts:["Waste","Friends","Trees"],                                a:"Waste",              emoji:"♻️" },
-      { sdg:"SDG 13", topic:"Climate Action",           q:"SDG 13 wants us to act on ___?",                          opts:["Climate change","Math homework","Homework"],              a:"Climate change",     emoji:"🌡️" },
-      { sdg:"SDG 14", topic:"Life Below Water",         q:"SDG 14 protects which place?",                            opts:["Oceans & seas","Mountains","Deserts"],                    a:"Oceans & seas",      emoji:"🐠" },
-      { sdg:"SDG 15", topic:"Life on Land",             q:"SDG 15 wants to protect forests and ___?",                opts:["Animals","Cars","Buildings"],                             a:"Animals",            emoji:"🌳" },
-      { sdg:"SDG 16", topic:"Peace & Justice",          q:"SDG 16 is about peace, justice and strong ___?",          opts:["Institutions","Muscles","Storms"],                        a:"Institutions",       emoji:"⚖️" },
-      { sdg:"SDG 17", topic:"Partnerships",             q:"SDG 17 says countries should work ___?",                  opts:["Together","Alone","Faster"],                              a:"Together",           emoji:"🌐" },
-    ];
+  { sdg:"SDG",      topic:"Clean Water",             q:"You're thirsty but the only water nearby is dirty. What's the safest thing to do?",          opts:["Find clean water","Drink it anyway","Wait until tomorrow"],    a:"Find clean water",   emoji:"💧" },
+  { sdg:"SDG",      topic:"Clean Energy",             q:"Your town can build a new power plant. Which choice is best for the planet?",                opts:["Solar panels","Coal factory","Oil burner"],                     a:"Solar panels",       emoji:"⚡" },
+  { sdg:"SDG",      topic:"Zero Hunger",              q:"A classmate hasn't eaten since yesterday. What does she need most right now?",               opts:["Food","A new pencil","Extra homework"],                         a:"Food",               emoji:"🌾" },
+  { sdg:"SDG",      topic:"Good Health",              q:"The easiest thing you can do every day to stop germs from spreading is ___?",                opts:["Wash your hands","Buy new clothes","Run faster"],               a:"Wash your hands",    emoji:"🧼" },
+  { sdg:"SDG",      topic:"Gender Equality",          q:"A girl wants to join the school science team but is told it's 'only for boys'. Is that fair?",opts:["No, she should be allowed","Yes, boys only","Only if she's tall"], a:"No, she should be allowed", emoji:"⚖️" },
+  { sdg:"SDG",      topic:"Responsible Consumption",  q:"You finish a water bottle on a picnic. What's the most responsible thing to do with it?",    opts:["Recycle it","Drop it on the grass","Throw it in the sea"],      a:"Recycle it",         emoji:"♻️" },
+  { sdg:"SDG",      topic:"Life Below Water",         q:"You see someone pouring used oil into a drain that leads to the sea. This is bad because ___?", opts:["It poisons marine life","Fish like oil","The sea is already dirty"], a:"It poisons marine life", emoji:"🐠" },
+  { sdg:"SDG",      topic:"Life on Land",             q:"A forest is being cut down to build a car park. What is lost forever if we do this?",        opts:["Animal habitats","Old buildings","Parking spaces"],             a:"Animal habitats",    emoji:"🌳" },
+
+  { sdg:"Earth Day", topic:"Our Planet",              q:"You can either walk, cycle, or take a petrol car to school. Which is best for the planet?",  opts:["Cycle","Petrol car","Ask someone else to drive"],               a:"Cycle",              emoji:"🚲" },
+  { sdg:"Earth Day", topic:"Our Planet",              q:"Leaving your phone charger plugged in all day when nothing is charging ___?",                 opts:["Wastes energy","Charges the air","Is totally fine"],            a:"Wastes energy",      emoji:"🔌" },
+  { sdg:"Earth Day", topic:"Our Planet",              q:"Which of these shopping bags is the kindest choice for the planet?",                          opts:["Reusable cloth bag","Single-use plastic bag","Paper bag every time"], a:"Reusable cloth bag", emoji:"👜" },
+  { sdg:"Earth Day", topic:"Our Planet",              q:"Bees visit flowers and carry pollen from plant to plant. Without bees, what would suffer most?", opts:["Our food supply","The weather","The oceans"],                 a:"Our food supply",    emoji:"🐝" },
+  { sdg:"Earth Day", topic:"Our Planet",              q:"It's a hot day and you want to cool your room. Which uses the least energy?",                 opts:["Open a window","Run the air-con all day","Leave the fridge open"], a:"Open a window",    emoji:"🪟" },
+  { sdg:"Earth Day", topic:"Our Planet",              q:"You have leftover food after dinner. What's the most planet-friendly thing to do?",           opts:["Save it for later","Throw it in the bin","Leave it outside"],   a:"Save it for later",  emoji:"🍱" },
+  { sdg:"Earth Day", topic:"Our Planet",              q:"Trees are cut down and CO₂ in the air goes up. These two facts are connected because trees ___?", opts:["Absorb CO₂","Produce CO₂","Have nothing to do with CO₂"],  a:"Absorb CO₂",         emoji:"🌲" },
+  { sdg:"Earth Day", topic:"Our Planet",              q:"The Arctic ice is melting faster every decade. What is the most likely cause?",               opts:["Rising temperatures","Too many polar bears","The moon pulling it"], a:"Rising temperatures", emoji:"🧊" },
+];
 
     // ─────────────────────────────────────────────────────────────
     // STATE
